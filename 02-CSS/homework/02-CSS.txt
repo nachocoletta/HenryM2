@@ -1,0 +1,25 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes 
+conceptos como si se lo estuvieras explicando a un niño de 12 años. 
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+* Framework
+
+Framework es una herramienta que facilita la construccion de estilos css para paginas web.
+En vez de tener que escribr todo el codigo css se escriben menos lineas de texto.
+Un ejemplo de Framework es bootsrap que por ejemplo para hacer grillas posee una herramienta
+para tal fin
+
+
+* Preprocesador
+
+Un Preprocesador es un programa que permite generar codigo CSS a partir de su propio codigo, 
+se pueden utilizar variables para definir colores por ejemplo o tamaños determinados y luego 
+ser utilizados en este programa para generar codigo css.
+Un ejemplo de Preprocesador es less
+
+* Responsive website
+
+Un sitio web Responsive es aquel que se puede adaptar a cualquier dispositivo.
+Es decir puede verse tanto en un telefono, como en una tableta o en una computadora.
+En cada dispositivo se vera distinto ya que va a variar que se muestra segun el tamaño 
+de la pantalla
