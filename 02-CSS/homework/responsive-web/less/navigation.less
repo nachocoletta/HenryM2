@@ -1,1 +1,41 @@
 // Código de Nav acá
+
+nav {
+    .flex(column, center, center);
+ //   align-items: @align;
+ //   flex-direction: @direction;
+    background-color: @nav-bg;
+    display: flex;
+    
+    h2 {
+       // text-align: center;
+        margin: 2rem;
+    }
+    
+    ul {
+        .flex(row, space-around, center);
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: space-around;
+  //      flex-direction: @direction;
+        display: flex;
+  //      align-items: @align;
+        a {
+            font-size: 15px;
+            color: @nav-font;
+            text-decoration: none;
+        }
+        li {
+            display: inline-block;
+        }
+        @media @phone {
+            width: 80%;
+        }
+    }
+    
+}
+
+
+
