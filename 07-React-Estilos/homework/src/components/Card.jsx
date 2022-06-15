@@ -9,17 +9,19 @@ export default function Card({max, min, name, img, onClose}) {
   
 
   return  (<div id={cardStyles.div}>
-            <button className={cardStyles.boton} onClick={onClose}>x</button>
-            <h1 className={cardStyles.cityName}>{name}</h1>
-            <div id={cardStyles.divMin}>
-              <h2>Min {min}</h2>
-            </div>
-            <div id={cardStyles.divMax}>
-              <h2>Max {max}</h2>
-            </div>
-            <div>
-              <img className={cardStyles.imgStyle} src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt=""/>
-            </div>
+            <div id={cardStyles.styleCards}>
+              <button className={cardStyles.boton} onClick={onClose}>x</button>
+              <h1 className={cardStyles.cityName}>{name}</h1>
+                <div id={cardStyles.divMin}>
+                  <h2>Min {min}</h2>
+                </div>
+                <div id={cardStyles.divMax}>
+                  <h2>Max {max}</h2>
+                </div>
+                <div>
+                  <img className={cardStyles.imgStyle} src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt=""/>
+                </div>
+              </div>
           </div>
   ) 
 };
