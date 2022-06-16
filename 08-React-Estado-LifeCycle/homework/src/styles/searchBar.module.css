@@ -1,0 +1,29 @@
+#divSearch {
+    /* background-color: gainsboro; */
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+#inputSearch {
+    background-color: azure;
+    color: dimgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+#botonAgregar {
+    background-color: azure;
+    color: dimgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
