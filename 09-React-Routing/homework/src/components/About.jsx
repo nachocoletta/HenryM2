@@ -1,9 +1,6 @@
 import React from 'react';
+import './About.css';
 
-export default function About() {
-    return (
-        <div>
-            <h4>About app</h4>
-        </div>
-    );
+export default function About () {
+    return (<div>About</div>);
 }

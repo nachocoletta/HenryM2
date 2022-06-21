@@ -6,9 +6,11 @@ import './Nav.css';
 function Nav({onSearch}) {
   return (
     <div>
-      <img src={Logo} alt="logo" />
-      <span>Henry weather app</span>
-      <SearchBar onSearch={onSearch} />
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <img src={Logo} alt="" />
+        <span>Henry Weather App</span>
+        <SearchBar onSearch={onSearch}/>
+      </nav>
     </div>
   );
 };

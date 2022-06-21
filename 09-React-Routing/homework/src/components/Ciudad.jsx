@@ -1,12 +1,8 @@
-import React from 'react';
-// import { useParams } from 'react-router-dom';
-import './Ciudad.css';
-import './Card.css'
+import React from "react";
 
 export default function Ciudad({city}) {
-
     return (
-        <div className="card">
+        <div className="ciudad">
                 <div className="container">
                     <h2>{city.name}</h2>
                     <div className="info">

@@ -3,10 +3,13 @@ const contador = require('./reducer');
 const { incremento, decremento } = require('./actions');
 
 // En esta linea creamos nuestro store. Pasandole como parametro nuestro Reducer
-var store;
+var store = createStore(contador); // creamos el store, le pasamos contador porque viene del reducer
+
 
 // Obtenemos el elemento con el id `valor`.
 var valor;
+
+valor = document.getElementById("valor");
 
 // Esta funcion nos va a servir para actualizar nuestro DOM con el valor que tengamos en nuestro Store.
 // En el primer render y cada vez que nos subscribamos al Store.
@@ -14,17 +17,38 @@ var valor;
 function renderContador() {
   // Obtenemos la propiedad 'contador' de nuestro store:
   
+  valor.innerText = store.getState().contador;
+
   // Seteamos el numero obtenido como texto dentro del elemento con id 'valor':
 
 }
 
 // Ejecutamos la funcion 'renderContador':
 
-
+renderContador();
 
 // Nos subscribimos al store pasandole la misma funcion. Asi cada vez que llegue una accion, ejecutamos la funcion:
 
-
+store.subscribe(renderContador); 
 
 // Por ultimo, utilizamos los botones de nuestro HTML para que cada vez que hagamos click,
 // hagan un dispatch al store de la accion correspondiente:
+
+let inc = document.getElementById('incremento');
+let dec = document.getElementById('decremento');
+let incImpar = document.getElementById('incrementoImpar');
+let incAsync = document.getElementById('incrementoAsync');
+
+inc.onclick = () => {store.dispatch(incremento)};
+dec.onclick = () => {store.dispatch(decremento)};
+
+incImpar.onclick = () => { 
+                            if(!(store.getState().contador % 2 === 0)){
+                              {store.dispatch(incremento)};
+                            }
+                          }
+incAsync.onclick = () => {
+                            setTimeout( () => {  store.dispatch(incremento) 
+
+                            }, 1000);
+                          }

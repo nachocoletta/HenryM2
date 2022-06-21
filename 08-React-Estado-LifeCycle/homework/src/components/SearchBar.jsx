@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 
 export default function SearchBar({onSearch}) {
-  const [city, setCity] = useState('');
-
-
-
+  const [city, setCity] = useState(''); // define un estado con un array vacio
+  // 
   return (
     <form onSubmit={(e) => {
-      e.preventDefault(); // metodo que se usa para no actualizar la pagina
+      e.preventDefault(); 
       onSearch(city);
     }}>
       <input
